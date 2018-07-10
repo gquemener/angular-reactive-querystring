@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to the Bacons list!
+  </h1>
+  <img width="300" alt="Angular Logo" src="https://baconipsum.com/wp-content/themes/baconipsum-custom-theme-v2/images/bacon-ipsum-banner1.jpg">
+</div>
+<div>
+  <input type="number" [formControl]="limit" />
+</div>
+<h2>Here's a list of {{ count | async }} bacons</h2>
+<ul>
+  <li *ngFor="let bacon of bacons | async">
+    {{ bacon }}
+  </li>
+</ul>
+
